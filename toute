@@ -1,0 +1,6 @@
+
+Route::get('feedback', [ChefFeedbackController::class, 'index']); 
+Route::get('feedback/{id}', [ChefFeedbackController::class, 'show']); 
+Route::post('feedback', [ChefFeedbackController::class, 'store']); 
+Route::put('feedback/{id}', [ChefFeedbackController::class, 'update']); 
+Route::delete('feedback/{id}', [ChefFeedbackController::class, 'destroy']); 
